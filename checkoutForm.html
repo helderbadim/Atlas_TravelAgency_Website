@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="icon" type="image/x-icon" href="/Logo/logo_atlas_globo_default.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAV NAV NAV -->
+    <main>
+        <nav>
+            <a href="index.html">
+                <div class="nav-container-left">
+                    <img id="globe" class="rotating" src="Logo/logo_atlas_globo_default.svg" alt="brandLogo"
+                        width="60px">
+                    <img id="name" src="Logo/logo_atlas_default_textonly.svg" alt="">
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="travelPacks.html">Travel Packs</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travelStories.html">Travel Stories</a></li>
+            </ul>
+
+            <div class="nav-container-right">
+                <img id="navIcon" src="Icons/user.png" alt="">
+            </div>
+            <div class="hamburger">
+                <img class="hamburger" src="Icons/burger_menu.png" alt="">
+            </div>
+        </nav>
+        <div class="menu">
+            <div class="header">
+                <div class="nav-container-left">
+                    <img id="globe" class="rotating" src="Logo/logo_atlas_globo_default.svg" alt="brandLogo"
+                        width="60px">
+                    <img id="name" src="Logo/logo_atlas_default_textonly.svg" alt="">
+                </div>
+                <img id="close-icon" src="Icons/close-x-svgrepo-com.svg" alt="">
+            </div>
+            <div class="separation"></div>
+            <ul>
+                <li><a class="menu-item" href="travelPacks.html">Travel Packs</a></li>
+                <li><a class="menu-item" href="destinations.html">Destinations</a></li>
+                <li><a class="menu-item" href="travelStories.html">Travel Stories</a></li>
+                <li><a class="menu-item" href="">My Account</a></li>
+            </ul>
+        </div>
+
+        <main class="checkoutMain">
+            <section id="entire-checkout-page">
+                <!-- Checkout Form Container -->
+                <div class="container my-5">
+                    <div class="row gy-4 d-flex align-items-start">
+                        <!-- Travel Pack Summary (appears 2nd always) -->
+                        <aside id="checkoutform-aside-summary-box" class="col-lg-4 order-lg-2 order-1">
+                            <h4 class="text-center mb-4">Your Travel Pack Summary</h4>
+                            <div class="side-summary">
+                                <img id="summary-pic"
+                                    src="Images/CheckoutForm_Page/wonders-of-south-america_1_machu-picchu-peru.jpg"
+                                    alt="A picture showing Machu Pichu, pertaining to our South American Wonder package."
+                                    class="summary-image img-fluid mb-4">
+                                <h5 class="mb-3">Latin Adventures</h5>
+                                <ul class="list-unstyled ms-3">
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-calendar2-fill me-2"></i>
+                                        <span>10 Jan 2025 - 20 Jan 2025</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-clock-fill me-2"></i>
+                                        <span>10 days</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-people-fill me-2"></i>
+                                        <span>2 Adults</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-pin-map-fill me-2"></i>
+                                        <span>Machu Pichu</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Promo code">
+                                    </div>
+                                    <button type="button" class="btn btn-outline-dark w-100"
+                                        id="applyButton">Apply</button>
+                                </form>
+                                <div class="mt-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Subtotal</p>
+                                        <p>€3500</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Total</h5>
+                                        <h5>€3500</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <!-- Traveler Details (appears 1st always) -->
+                        <!-- Added mt-5 here -->
+                        <div class="col-lg-8 order-lg-1 order-1 mt-5 pt">
+                            <h4 class="text-center mb-4">Your Traveler Details</h4>
+                            <div class="form-container p-4">
+                                <h5 class="going-header">Who's going?</h5>
+                                <!-- Traveler 1 -->
+                                <div class="mb-5 p-3">
+                                    <h6 class="mb-3">Traveler 1</h6>
+                                    <input type="text" class="form-control mb-3" placeholder="Your Full Name">
+                                    <input type="email" class="form-control mb-3" placeholder="Email">
+                                    <input type="tel" class="form-control mb-3" placeholder="Phone">
+                                    <input type="text" class="form-control mb-3" placeholder="Address">
+                                    <input type="text" class="form-control mb-3"
+                                        placeholder="Apartment, suite, etc (optional)">
+                                    <input type="text" class="form-control mb-3" placeholder="ZIP code">
+                                    <input type="text" class="form-control mb-3" placeholder="City">
+                                    <input type="text" class="form-control mb-3" placeholder="Region">
+                                    <input type="text" class="form-control mb-3" placeholder="Country">
+                                </div>
+
+                                <!-- Traveler 2 -->
+                                <div class="mb-5 p-3">
+                                    <h6 class="mb-3">Traveler 2</h6>
+                                    <input type="text" class="form-control mb-3" placeholder="Your Full Name">
+                                    <input type="email" class="form-control mb-3" placeholder="Email">
+                                    <input type="tel" class="form-control mb-3" placeholder="Phone">
+                                    <input type="text" class="form-control mb-3" placeholder="Address">
+                                    <input type="text" class="form-control mb-3"
+                                        placeholder="Apartment, suite, etc (optional)">
+                                    <input type="text" class="form-control mb-3" placeholder="ZIP code">
+                                    <input type="text" class="form-control mb-3" placeholder="City">
+                                    <input type="text" class="form-control mb-3" placeholder="Region">
+                                    <input type="text" class="form-control mb-3" placeholder="Country">
+                                </div>
+
+                                <!-- Payment Section -->
+                                <div class="mb-5 p-3">
+                                    <h5 class="mb-3">Payment method</h5>
+                                    <div class="mb-4 p-3">
+                                        <div class="form-check mb-3">
+                                            <input type="radio" class="form-check-input" name="payment" id="credit"
+                                                checked>
+                                            <label class="form-check-label" for="credit">Debit / Credit</label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="radio" class="form-check-input" name="payment" id="bank">
+                                            <label class="form-check-label" for="bank">Bank Transfer</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="payment" id="paypal">
+                                            <label class="form-check-label" for="paypal">PayPal</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-primary w-100 mt-4" id="bookButton">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <div class="background-footer">
+        <main>
+            <footer>
+                <div class="superior">
+                    <div class="footer-container-left">
+                        <img class="img-fluid" src="Logo/logo_atlas_white.svg" alt="">
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer company">
+                            <p>Company</p>
+                            <ul>
+                                <li>About us</li>
+                                <li>Team</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                        <div class="footer legal">
+                            <p>Legal</p>
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Terms of Use</li>
+                                <li>T&C's</li>
+                                <li>Cookie Policy</li>
+                            </ul>
+                        </div>
+                        <div class="footer follow">
+                            <p>Follow Us</p>
+                            <ul>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>LinkedIn</li>
+                                <li>X</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe to our Newsletter</p>
+                        <div>
+                            <input type="text" placeholder="Email">
+                            <button><img src="Icons/newsletter.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <p>© Copyright 2024 | Atlas Travel</p>
+                    <p>Mockup website designed and created by these 3 people: <a href="">helderbadim </a> | <a
+                            href="">patricia-nog</a> | <a href="">devsoraia</a></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

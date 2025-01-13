@@ -1,0 +1,41 @@
+1. European Charm: A Journey Through Tuscany
+Continent: Europe
+Country: Italy
+Brief Description: Experience the rustic charm of Tuscany with its rolling vineyards, medieval villages, and world-renowned cuisine.
+Number of Days: 7 days
+Price: $1,800 per person
+
+2. Ancient Wonders of Angkor Wat
+Continent: Asia
+Country: Cambodia
+Brief Description: Discover the awe-inspiring Angkor Wat temple complex, explore vibrant markets in Siem Reap, and cruise the floating villages of Tonlé Sap Lake.
+Number of Days: 8 days
+Price: $1,900 per person
+
+3. Safari Splendor: The Serengeti Experience
+Continent: Africa
+Country: Tanzania
+Brief Description: Witness the majestic "Big Five" and the Great Migration in the heart of the Serengeti, with luxurious safari lodges.
+Number of Days: 8 days
+Price: $3,500 per person
+
+4. The Wonders of Patagonia
+Continent: South America
+Country: Chile & Argentina
+Brief Description: Explore the breathtaking landscapes of Patagonia, from glacial lakes to towering mountains and rich wildlife.
+Number of Days: 12 days
+Price: $4,000 per person
+
+5. Tropical Bliss in Bali
+Continent: Asia
+Country: Indonesia
+Brief Description: Relax on pristine beaches, visit ancient temples, and experience the vibrant culture of Bali. Perfect for a tranquil getaway.
+Number of Days: 6 days
+Price: $1,200 per person
+
+6. Arctic Expedition: The Northern Lights
+Continent: Europe
+Country: Norway
+Brief Description: Chase the mesmerizing Aurora Borealis, explore icy fjords, and cozy up in traditional Scandinavian cabins.
+Number of Days: 5 days
+Price: $2,800 per person

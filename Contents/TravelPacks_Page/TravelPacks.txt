@@ -1,0 +1,83 @@
+1. Parisian Escape (Culture)
+Continent Europe
+Country France
+Description Experience the romance of Paris, visit iconic landmarks like the Eiffel Tower, explore art galleries, and savor French cuisine.
+Days 5 days
+Price $1,500 per person
+
+2. Amalfi Coast Retreat (Relaxation)
+Continent Europe
+Country Italy
+Description Unwind along the stunning Amalfi Coast, with breathtaking sea views, charming villages, and exquisite Mediterranean food.
+Days 7 days
+Price $2,200 per person
+
+3. Serengeti Safari Adventure (Nature & Wildlife)
+Continent Africa
+Country Tanzania
+Description Witness the Great Migration, spot the Big Five, and enjoy safari lodges surrounded by the vast Serengeti plains.
+Days 8 days
+Price $3,800 per person
+
+4. Mystical Kyoto and Tokyo (Culture)
+Continent Asia
+Country Japan
+Description Explore the blend of modern Tokyo and historic Kyoto, with visits to ancient temples, bustling markets, and serene gardens.
+Days 6 days
+Price $2,500 per person
+
+5. Patagonia Trekking Expedition (Adventure)
+Continent South America
+Country Chile & Argentina
+Description Hike through Patagonia’s rugged landscapes, including glaciers, mountains, and stunning national parks.
+Days 10 days
+Price $4,200 per person
+
+6. Maldives Island Escape (Relaxation)
+Continent Asia
+Country Maldives
+Description Luxuriate in overwater bungalows, crystal-clear lagoons, and pristine beaches in the Maldives’ tranquil paradise.
+Days 5 days
+Price $5,000 per person
+
+7. Machu Picchu Discovery (Adventure & Culture)
+Continent South America
+Country Peru
+Description Trek through the Sacred Valley to the awe-inspiring ruins of Machu Picchu, a UNESCO World Heritage site.
+Days 7 days
+Price $2,700 per person
+
+8. Iceland Northern Lights Tour (Nature)
+Continent Europe
+Country Iceland
+Description Chase the Northern Lights, explore glaciers, and soak in geothermal lagoons under Iceland’s breathtaking landscapes.
+Days 6 days
+Price $3,200 per person
+
+9. Moroccan Caravan Adventure (Culture & Adventure)
+Continent Africa
+Country Morocco
+Description Journey through Marrakech’s souks, camp in the Sahara Desert, and explore the Blue City of Chefchaouen.
+Days 9 days
+Price $2,300 per person
+
+10. The Canadian Rockies (Nature)
+Continent North America
+Country Canada
+Description Explore Banff and Jasper National Parks, hike through alpine trails, and kayak on glacial lakes.
+Days 7 days
+Price $2,600 per person
+
+11. Bagan and Inle Lake Journey (Culture)
+Continent Asia
+Country Myanmar
+Description Discover ancient temples in Bagan and serene floating villages on Inle Lake, showcasing Myanmar’s rich heritage.
+Days 8 days
+Price $1,800 per person
+
+12. The Greek Island Hopping Experience (Relaxation & Culture)
+Continent Europe
+Country Greece
+Description Sail across the Aegean Sea to explore Santorini, Mykonos, and Crete, enjoying stunning beaches and rich history.
+Days 10 days
+Price $3,000 per person

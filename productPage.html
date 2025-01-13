@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Atlas</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="index.html">
+                <div class="nav-container-left">
+                    <img id="globe" class="rotating" src="Logo/logo_atlas_globo_default.svg" alt="brandLogo"
+                        width="60px">
+                    <img id="name" src="Logo/logo_atlas_default_textonly.svg" alt="">
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="travelPacks.html">Travel Packs</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travelStories.html">Travel Stories</a></li>
+            </ul>
+
+            <div class="nav-container-right">
+                <img id="navIcon" src="Icons/user.png" alt="">
+            </div>
+            <div class="hamburger">
+                <img class="hamburger" src="Icons/burger_menu.png" alt="">
+            </div>
+        </nav>
+        <div class="menu">
+            <div class="header">
+                <div class="nav-container-left">
+                    <img id="globe" class="rotating" src="Logo/logo_atlas_globo_default.svg" alt="brandLogo"
+                        width="60px">
+                    <img id="name" src="Logo/logo_atlas_default_textonly.svg" alt="">
+                </div>
+                <img id="close-icon" src="Icons/close-x-svgrepo-com.svg" alt="">
+            </div>
+            <div class="separation"></div>
+            <ul>
+                <li><a class="menu-item" href="travelPacks.html">Travel Packs</a></li>
+                <li><a class="menu-item" href="destinations.html">Destinations</a></li>
+                <li><a class="menu-item" href="travelStories.html">Travel Stories</a></li>
+                <li><a class="menu-item" href="">My Account</a></li>
+            </ul>
+        </div>
+
+        <div class="slideshow-container" id="slider-container" data-index="1">
+            <div class="mySlides fade">
+                <img src="Images/ProductPage/Product1.png" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/ProductPage/Product2.png" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/ProductPage/Product3.png" alt="Slide 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/ProductPage/Product4.png" alt="Slide 4">
+            </div>
+            <!-- Navigation Buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)"><button><img src="Icons/previous.svg" alt=""
+                        width="16px"></button></a>
+            <a class="next" onclick="plusSlides(1, 1)"><button><img src="Icons/next.svg" alt=""
+                        width="16px"></button></a>
+        </div>
+        <div class="pp-text">
+            <h2>Latin Adventures</h2>
+            <h4>Discover the diverse beauty of South America on a 16-day adventure through Brazil, Argentina, and Peru.
+                From
+                vibrant cities to ancient ruins and stunning natural wonders, this trip is a journey of a lifetime.</h4>
+        </div>
+        <div class="travel-details">
+            <div class="travel-details-container">
+                <ul class="travel-details-list">
+                    <li>
+                        <img src="Icons/map-pin.png" alt="">
+                        <div class="attribute">
+                            <p>Start at</p>
+                            <p>Rio de Janeiro</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Icons/arrival.png" alt="">
+                        <div class="attribute">
+                            <p>End at</p>
+                            <p>Lima</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Icons/time.png" alt="">
+                        <div class="attribute">
+                            <p>Duration</p>
+                            <p>16 Days</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Icons/users.png" alt="">
+                        <div class="attribute">
+                            <p>Group size</p>
+                            <p>16 people</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Icons/difficulty.png" alt="">
+                        <div class="attribute">
+                            <p>Difficulty</p>
+                            <p>Moderate</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Icons/style.png" alt="">
+                        <div class="attribute">
+                            <p>Style</p>
+                            <p>Adventure</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="travel-details1250">
+            <div class="travel-details-container1250">
+                <div>
+                    <ul class="travel-details-list">
+                        <li>
+                            <img src="Icons/map-pin.png" alt="">
+                            <div class="attribute">
+                                <p>Start at</p>
+                                <p>Rio de Janeiro</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/arrival.png" alt="">
+                            <div class="attribute">
+                                <p>End at</p>
+                                <p>Lima</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/time.png" alt="">
+                            <div class="attribute">
+                                <p>Duration</p>
+                                <p>16 Days</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="travel-details-list">
+                        <li>
+                            <img src="Icons/users.png" alt="">
+                            <div class="attribute">
+                                <p>Group size</p>
+                                <p>16 people</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/difficulty.png" alt="">
+                            <div class="attribute">
+                                <p>Difficulty</p>
+                                <p>Moderate</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/style.png" alt="">
+                            <div class="attribute">
+                                <p>Style</p>
+                                <p>Adventure</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="travel-details768">
+            <div class="travel-details-container768">
+                <div>
+                    <ul class="travel-details-list">
+                        <li>
+                            <img src="Icons/map-pin.png" alt="">
+                            <div class="attribute">
+                                <p>Start at</p>
+                                <p>Rio de Janeiro</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/arrival.png" alt="">
+                            <div class="attribute">
+                                <p>End at</p>
+                                <p>Lima</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="travel-details-list">
+                        <li>
+                            <img src="Icons/time.png" alt="">
+                            <div class="attribute">
+                                <p>Duration</p>
+                                <p>16 Days</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/users.png" alt="">
+                            <div class="attribute">
+                                <p>Group size</p>
+                                <p>16 people</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="travel-details-list">
+                        <li>
+                            <img src="Icons/difficulty.png" alt="">
+                            <div class="attribute">
+                                <p>Difficulty</p>
+                                <p>Moderate</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="Icons/style.png" alt="">
+                            <div class="attribute">
+                                <p>Style</p>
+                                <p>Adventure</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="trip">
+            <div class="trip-summary">
+                <div class="trip-description">
+                    <h3>About your Trip</h3>
+                    <p>The Latin Adventures Expedition is an epic 16-day journey that highlights the best of South
+                        America’s culture,
+                        history, and natural beauty. Starting in Rio de Janeiro, Brazil, you’ll soak in the vibrant city
+                        atmosphere and iconic
+                        landmarks. Travel to Iguazu Falls, one of the most powerful waterfalls in the world, before
+                        heading
+                        to
+                        Buenos Aires to
+                        embrace Argentina’s rich culture and tango traditions. Finish your journey in Peru, exploring
+                        the
+                        Sacred
+                        Valley, the
+                        awe-inspiring ruins of Machu Picchu, and the cultural hub of Cusco. This adventure promises
+                        breathtaking
+                        views,
+                        unforgettable experiences, and deep cultural immersion.</p>
+                </div>
+                <div class="trip-highlights">
+                    <h3>Trip Highlights</h3>
+                    <ul>
+                        <li>
+                            <div>1</div>Walk along Copacabana Beach and visit Christ the Redeemer in Rio de Janeiro.
+                        </li>
+                        <li>
+                            <div>2</div>Witness the power and beauty of Iguazu Falls, a UNESCO World Heritage site.
+                        </li>
+                        <li>
+                            <div>3</div>Explore the historic neighborhoods and tango shows of Buenos Aires, Argentina.
+                        </li>
+                        <li>
+                            <div>4</div>Discover the ancient Inca city of Machu Picchu in Peru.
+                        </li>
+                        <li>
+                            <div>5</div>Wander through the charming streets and markets of Cusco.
+                        </li>
+                        <li>
+                            <div>6</div>Enjoy local experiences, including Brazilian samba, Argentinian steak dinners,
+                            and
+                            Peruvian
+                            ceviche.
+                        </li>
+                    </ul>
+                </div>
+                <div class="trip-itinerary">
+                    <h3>Itinerary</h3>
+                    <ul>
+                        <li><span></span>Day 1-3: Rio de Janeiro, Brazil – Explore Sugarloaf Mountain, Christ the
+                            Redeemer,
+                            and Samba
+                            nightlife.
+                        </li>
+                        <li><span></span>Day 4-5: Iguazu Falls – Visit the Brazilian and Argentinian sides of the falls.
+                        </li>
+                        <li><span></span>Day 6-8: Buenos Aires, Argentina – City tour, tango show, and a day trip to the
+                            Tigre Delta.
+                        </li>
+                        <li><span></span>Day 9: Fly to Lima, Peru – Free evening to explore the city.
+                        </li>
+                        <li><span></span>Day 10-11: Sacred Valley and Pisac Market – Guided tour of Inca sites and local
+                            crafts shopping.
+                        </li>
+                        <li><span></span>Day 12: Machu Picchu – Full-day exploration of the Lost City of the Incas.
+                        </li>
+                        <li><span></span>Day 13-14: Cusco – Explore Sacsayhuamán fortress and enjoy cultural experiences
+                            in
+                            the city.
+                        </li>
+                        <li><span></span>Day 15-16: Departure from Lima – Final shopping or relaxation before heading
+                            home.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <div class="summary">
+                    <h4>Latin Adventures</h4>
+                    <p>Price / per person</p>
+                    <h4>3500€</h4>
+                    <button><a href="checkoutForm.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="price1150">
+            <div>
+                <h4>Latin Adventures</h4>
+                <h4>3500€ <span>p.p</span></h4>
+            </div>
+            <button><a id="button1150" href="checkoutForm.html">Book</a></button>
+            <button class="button640"><a href="checkoutForm.html"><img src="Icons/newsletter.png" alt=""></a></button>
+        </div>
+        </div>
+    </main>
+
+    <div class="background-footer">
+        <main>
+            <footer>
+                <div class="superior">
+                    <div class="footer-container-left">
+                        <img class="footerLogo" src="Logo/logo_atlas_white.svg" alt="">
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer company">
+                            <p>Company</p>
+                            <ul>
+                                <li>About us</li>
+                                <li>Team</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                        <div class="footer legal">
+                            <p>Legal</p>
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Terms of Use</li>
+                                <li>T&C's</li>
+                                <li>Cookie Policy</li>
+                            </ul>
+                        </div>
+                        <div class="footer follow">
+                            <p>Follow Us</p>
+                            <ul>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>LinkedIn</li>
+                                <li>X</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe to our Newsletter</p>
+                        <div>
+                            <input type="text" placeholder="Email">
+                            <button><img src="Icons/newsletter.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <p>© Copyright 2024 | Atlas Travel</p>
+                    <p>Mockup website designed and created by these 3 people: <a href="">helderbadim </a> | <a
+                            href="">patricia-nog</a> | <a href="">devsoraia</a></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

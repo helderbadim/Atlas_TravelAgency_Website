@@ -1,0 +1,41 @@
+1. Discover the Enchanted Galápagos
+Continent: South America
+Country: Ecuador
+Brief Description: Sail through the Galápagos Islands and encounter unique wildlife, from giant tortoises to playful sea lions, in this one-of-a-kind eco-adventure.
+Number of Days: 7 days
+Price: $4,200 per person
+
+2. Arctic Adventure: Svalbard Explorer
+Continent: Europe
+Country: Norway
+Brief Description: Venture into the Arctic Circle to explore glaciers, spot polar bears, and witness the endless beauty of Svalbard’s snowy landscapes.
+Number of Days: 9 days
+Price: $3,800 per person
+
+3. Hidden Gems of Morocco
+Continent: Africa
+Country: Morocco
+Brief Description: Journey from the bustling souks of Marrakech to the serene dunes of the Sahara, staying in traditional riads and enjoying flavorful Moroccan cuisine.
+Number of Days: 10 days
+Price: $2,500 per person
+
+4. The Canadian Rockies Escape
+Continent: North America
+Country: Canada
+Brief Description: Explore the majestic Canadian Rockies, with stops at Banff, Lake Louise, and Jasper. Perfect for hiking, kayaking, and photography enthusiasts.
+Number of Days: 7 days
+Price: $2,300 per person
+
+5. Journey Through Japan’s Cultural Wonders
+Continent: Asia
+Country: Japan
+Brief Description: Immerse yourself in the beauty of Japan with stops at Kyoto’s historic temples, Tokyo’s vibrant streets, and Mount Fuji’s serene landscapes.
+Number of Days: 8 days
+Price: $3,100 per person
+
+6. Dive into the Maldives
+Continent: Asia
+Country: Maldives
+Brief Description: Relax in overwater villas, dive into crystal-clear lagoons, and enjoy unmatched luxury in one of the world’s most picturesque tropical destinations.
+Number of Days: 5 days
+Price: $5,000 per person

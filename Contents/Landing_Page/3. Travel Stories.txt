@@ -1,0 +1,29 @@
+1. Lake Bled: Slovenia’s Fairytale Escape
+Country: Slovenia
+Continent: Europe
+Place: Lake Bled
+
+2. Ha Long Bay: Emerald Waters and Limestone Isles
+Country: Vietnam
+Continent: Asia
+Place: Ha Long Bay
+
+3. Petra: The Rose-Red City
+Country: Jordan
+Continent: Asia
+Place: Petra
+
+4. Amalfi Coast: Coastal Elegance
+Country: Italy
+Continent: Europe
+Place: Amalfi Coast
+
+5. Table Mountain: Cape Town’s Iconic Peak
+Country: South Africa
+Continent: Africa
+Place: Table Mountain
+
+6. Banff National Park: Canadian Wilderness at Its Best
+Country: Canada
+Continent: North America
+Place: Banff National Park

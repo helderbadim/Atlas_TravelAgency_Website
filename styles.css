@@ -1,0 +1,2011 @@
+/*variable */
+:root {
+  --background-color: #f6f6f6;
+  --dark-blue-color: #002247;
+  --light-blue-color: #18839f;
+  --lighter-blue-color: #c7dce2;
+  --yellow-color: #f9a935;
+  --grey-color: #949ba2;
+  --light-grey-color: #e8edef;
+  --font-size-h1: 80px;
+  --font-size-h2: 64px;
+  --font-size-h3: 48px;
+  --font-size-h4: 32px;
+  --font-size-s: 16px;
+  --font-size-m: 20px;
+  --font-size-l: 24px;
+  --padding-xl: 64px;
+  --padding-l: 48px;
+  --padding-m: 30px;
+  --padding-s: 24px;
+  --padding-xs: 16px;
+  --font-family: "Poppins", sans-serif;
+}
+
+/*1024px, 768px, e garantir que todo o conteúdo cabe em 360px*/
+
+/*general structure*/
+* {
+  margin: 0;
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+}
+
+main {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1600px;
+}
+
+/*navbar*/
+nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-m) var(--padding-l) var(--padding-l) var(--padding-l);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  height: 138px;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-container-left {
+  display: flex;
+  align-items: center;
+}
+
+#globe {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+#name {
+  width: 93px;
+  height: 48px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 452px;
+  list-style: none;
+  padding: 17px 0;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+  font-size: var(--font-size-m);
+  position: relative;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--light-blue-color);
+}
+
+.nav-container {
+  width: 165px;
+  height: 60px;
+  display: flex;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+#navIcon {
+  width: 44px;
+  height: 44px;
+  padding: 8px 8px 8px 113px;
+  cursor: pointer;
+}
+
+nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  padding: 10px;
+  list-style: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-right: 48px;
+  position: absolute;
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.menu .header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 138px;
+  padding-top: 30px;
+  padding-bottom: 48px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 60px;
+  width: auto;
+}
+
+#close-icon {
+  height: 24px;
+  width: auto;
+}
+
+.menu img {
+  height: auto;
+  width: 120px;
+}
+
+.separation {
+  width: 100%;
+  border: 1px solid var(--dark-blue-color);
+}
+
+.menu ul {
+  padding-left: 0;
+}
+
+.menu li {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .nav-links,
+  #navIcon {
+    display: none;
+  }
+  nav .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+/* Initially hide the menu */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: var(--background-color);
+  z-index: 1000;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.menu.active {
+  display: flex;
+  padding: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+#close-icon {
+  cursor: pointer;
+}
+
+/* hero section */
+
+.header-message {
+  position: relative;
+}
+
+.header-message img {
+  height: auto;
+  max-width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+
+.pin {
+  width: 33%;
+}
+
+.pin p {
+  font-size: var(--font-size-l);
+  color: var(--dark-blue-color);
+  padding-top: 120px;
+}
+
+.pin img {
+  padding: 0;
+  height: 98px;
+  width: 56px;
+}
+
+.hero {
+  box-sizing: border-box;
+  padding: 0 24px;
+  height: auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.hero-image {
+  background-color: var(--background-color);
+  height: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.hero-image img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.hero-searchBar {
+  position: absolute;
+  box-sizing: border-box;
+  top: 15%;
+  display: flex;
+  max-width: 912px;
+  height: 84px;
+  list-style: none;
+  background-color: var(--background-color);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: var(--padding-s) var(--padding-xs);
+}
+
+.hero-searchBar li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-searchBar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.hero-searchBar li button {
+  max-width: 160px;
+  width: 160px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: var(--font-size-l);
+  font-family: inherit;
+  background-color: var(--yellow-color);
+  border: none;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-searchBar li button:hover {
+  opacity: 0.8;
+}
+
+.hero-searchBar .button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-searchBar li input[type="text"] {
+  width: 100%;
+  padding: 12px 20px 12px 10px;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-size-m);
+}
+
+
+.hero-message {
+  position: absolute;
+  display: flex;
+  height: 264px;
+  padding: 56px 48px 0 48px;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.hero-message h1 {
+  width: 67%;
+  font-size: var(--font-size-h1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--dark-blue-color);
+}
+
+/* .hero-message  p {
+  display: flex;
+  align-items: end;
+  width: 33%;
+
+} */
+
+.hero-message-two {
+  box-sizing: border-box;
+  height: 147px;
+  padding-bottom: 64px;
+  margin-bottom: 10px;
+}
+
+#searchIcon {
+  display: none;
+}
+
+@media (max-width: 1064px) {
+  .hero-searchBar {
+    width: 640px;
+  }
+
+  .hero-searchBar li input[type="text"] {
+    padding: 12px 16px 12px 10px;
+  }
+
+  .hero-message h1 {
+    font-size: var(--font-size-h2);
+  }
+
+  .hero-message p {
+    font-size: var(--font-size-m);
+  }
+}
+
+@media (max-width: 914px) {
+  .hero-message h1 {
+    font-size: var(--font-size-h3);
+  }
+
+  .hero-message p {
+    font-size: var(--font-size-s);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-searchBar {
+    width: 312px;
+    height: 76px;
+    padding-right: 8px;
+  }
+  .hero-searchBar input {
+    display: none;
+  }
+
+  #searchButton {
+    display: none;
+  }
+
+  #searchIcon {
+    display: flex;
+    height: 60px;
+    width: 60px;
+  }
+
+  #searchIcon button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #searchIcon img {
+    width: auto;
+    height: auto;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-image {
+    height: 80%;
+  }
+
+  .hero-message {
+    flex-direction: column;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .hero-message h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .hero-message p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--font-size-m);
+    margin-top: 48px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .hero-message .pin {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-message .pin p {
+    padding-top: 0;
+    width: 100%;
+  }
+  .hero-message .pin img {
+    margin-left: auto;
+  }
+}
+/*Featured Trips Section*/
+
+.trips_display {
+  width: 100%;
+  height: auto;
+}
+
+.trips_display .title {
+  height: 147px;
+  width: 100%;
+  padding-bottom: 64px;
+  padding-top: 160px;
+}
+
+.trips_display .title2 {
+  height: 147px;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.trips_display h2 {
+  text-align: center;
+  color: var(--dark-blue-color);
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+}
+
+.card-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+  row-gap: 120px;
+  padding: 0 var(--padding-l);
+}
+
+.card {
+  box-sizing: border-box;
+  width: calc(33.3% - 24px);
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card .image {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+  border: none;
+}
+
+.card img {
+  border: none;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.card-img-hover:hover {
+  scale: 1.03;
+}
+
+.card .box {
+  position: absolute;
+  width: 160px;
+  height: 48px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  border-radius: 0 20px 0 20px;
+}
+
+.description {
+  padding: 16px;
+  color: var(--dark-blue-color);
+}
+
+.country {
+  font-size: var(--font-size-s);
+  color: var(--light-blue-color);
+}
+
+.packName {
+  font-size: 32px;
+  font-weight: 600;
+  height: 96px;
+}
+
+.description div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.days {
+  font-size: var(--font-size-s);
+}
+
+.description .price {
+  font-size: var(--font-size-l);
+}
+
+.description .price strike{
+  font-size: var(--font-size-s);
+  padding-right: 8px;
+  color: var(--light-blue-color);
+}
+
+.category {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-blue-color);
+  font-weight: 400;
+}
+
+/*media queries card container*/
+
+.slideshow-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fade effect */
+  position: absolute; /* Stack all slides on top of each other */
+  width: 100%; /* Ensure slides take the full width */
+  height: auto; /* Keep the aspect ratio of images */
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.mySlides.show {
+  opacity: 1; /* Make the active slide visible */
+  position: relative; /* Ensure the visible slide is on top */
+  z-index: 1; /* Ensure the active slide is on top of others */
+}
+
+.prev,
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  user-select: none;
+  color: white;
+  z-index: 2; /* Keep buttons above the slides */
+}
+
+.prev button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--background-color);
+  padding: 0;
+}
+
+.next button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--background-color);
+  padding: 0;
+}
+
+.prev:hover {
+  background-color: var(--background-color);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.next:hover {
+  background-color: var(--background-color);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.prev button:hover {
+  color: var(--dark-blue-color);
+}
+
+.next button:hover {
+  color: var(--dark-blue-color);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+@media (max-width: 1300px) {
+  .card {
+    width: calc(50% - 24px);
+  }
+
+  .category {
+    top: 15px;
+    right: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .category {
+    top: 10px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 890px) {
+  .category {
+    top: 5px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 24px);
+  }
+
+  .category {
+    top: 15px;
+    right: 60px;
+  }
+
+  .trips_display h2 {
+    text-align: center;
+    color: var(--dark-blue-color);
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    padding-top: 64px;
+  }
+  .card-container {
+    justify-content: center;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .category {
+    top: 10px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 485px) {
+  .category {
+    top: 5px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .category {
+    font-size: 14px;
+    top: 5px;
+    right: 15px;
+  }
+
+  .trips_display .title {
+    padding-bottom: 36px;
+  }
+  .trips_display .title2 {
+    padding-bottom: 48px;
+    padding-top: 80px;
+  }
+
+  .trips_display h2 {
+    font-size: var(--font-size-h4);
+  }
+
+  .card-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  .category {
+    font-size: 14px;
+    top: 2px;
+    right: 10px;
+  }
+}
+
+/*chat*/
+
+.chat {
+  padding: 160px 48px 120px 48px;
+}
+
+.chat h3 {
+  font-size: var(--font-size-h3);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--dark-blue-color);
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.chat div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-cards {
+  position: relative; /* Ensure the parent container is positioned */
+  width: 318px;
+  height: 240px;
+}
+
+.chat-cards img {
+  display: block; /* Ensures the image is treated as a block element */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position relative to the .chat-cards container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half its own dimensions */
+  width: 100%;
+}
+
+.text p:first-of-type {
+  font-size: var(--font-size-h4);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.text p:nth-of-type(2) {
+  font-size: var(--font-size-l);
+  color: var(--dark-blue-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.text p img {
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1400px) {
+  .chat .mobile {
+    display: none;
+  }
+
+  .chat div {
+    justify-content: center;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 710px) {
+  .chat div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*footer*/
+
+.background-footer {
+  width: 100vw;
+  background-color: var(--dark-blue-color);
+}
+
+footer {
+  box-sizing: border-box;
+  max-width: 1600px;
+  background-color: var(--dark-blue-color);
+  padding: 48px 64px 0 64px;
+  height: auto;
+  color: var(--background-color);
+}
+
+.superior {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inferior {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  padding-bottom: 36px;
+}
+
+.inferior p {
+  font-size: 14px;
+}
+
+.inferior a {
+  text-decoration: underline;
+  color: var(--background-color);
+}
+
+.footer-container-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container-left .footerLogo {
+  height: 60px;
+  width: auto;
+  padding-top: 64px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+}
+
+.company {
+  width: auto;
+  max-width: 160px;
+  padding-right: 48px;
+}
+
+.legal {
+  width: auto;
+  max-width: 160px;
+  padding-right: 48px;
+}
+
+.follow {
+  max-width: 160px;
+  padding-right: 48px;
+}
+
+.footer p:first-of-type {
+  font-size: var(--font-size-l);
+  margin-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.footer ul:first-of-type {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.newsletter p {
+  font-size: var(--font-size-l);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 24px;
+}
+
+.newsletter div {
+  display: flex;
+}
+
+.newsletter input {
+  box-sizing: border-box;
+  margin-right: 24px;
+  width: auto;
+  max-width: 348px;
+  height: 60px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  border: none;
+}
+
+.newsletter input::placeholder {
+  font-size: var(--font-size-m);
+  color: var(--grey-color);
+}
+
+.newsletter button {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--light-blue-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1250px) {
+  footer {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .footer-links {
+    margin: 0 auto;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .newsletter div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter p {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .newsletter input {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 60%;
+  }
+
+  .superior {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1075px) {
+  .inferior {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .footer-links {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-links {
+    flex-wrap: wrap;
+  }
+  .newsletter div {
+    width: 100%;
+  }
+
+  .newsletter input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 410px) {
+  .newsletter p {
+    font-size: var(--font-size-m);
+  }
+}
+
+/*PRODUCT PAGE*/
+
+#slider-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+  width: 95%;
+}
+
+#slider-container .mySlides {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+#slider-container .mySlides img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+  border: none;
+}
+
+#slider-container button {
+  background-color: var(--background-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#slider-container button:hover {
+  opacity: 1;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.pp-text {
+  padding-top: 64px;
+  padding-left: 162px;
+  padding-right: 162px;
+}
+
+.pp-text h2 {
+  font-size: var(--font-size-h2);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.pp-text h4 {
+  font-size: var(--font-size-h4);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.travel-details {
+  padding: 64px 48px;
+  height: 100px;
+}
+
+.travel-details-container {
+  padding: 15px 16px;
+  background-color: var(--light-grey-color);
+  border-radius: 30px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.travel-details1250 {
+  padding: 64px 48px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.travel-details-container1250 {
+  box-sizing: border-box;
+  width: 637px;
+  padding: 16px;
+  height: 148px;
+  background-color: var(--light-grey-color);
+  border-radius: 20px;
+}
+
+.travel-details-container1250 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+}
+
+.travel-details-container1250 div li {
+  display: flex;
+  align-items: center;
+}
+
+.travel-details-container1250 div:first-of-type {
+  margin-bottom: 16px;
+}
+
+.travel-details768 {
+  padding: 64px 48px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.travel-details-container768 {
+  box-sizing: border-box;
+  width: 404px;
+  padding: 24px 16px;
+  height: auto;
+  background-color: var(--light-grey-color);
+  border-radius: 20px;
+}
+
+.travel-details-container768 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.travel-details-container768 ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.travel-details-container768 ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.travel-details-list {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travel-details-list li {
+  display: flex;
+  align-items: flex-end;
+  width: 186px;
+}
+
+.travel-details-list li img {
+  margin-right: 10px;
+}
+
+.attribute p:first-of-type {
+  font-size: var(--font-size-s);
+  color: var(--light-blue-color);
+  cursor: pointer;
+}
+
+.attribute p:nth-of-type(2) {
+  font-size: var(--font-size-m);
+  color: var(--dark-blue-color);
+  cursor: pointer;
+}
+
+.trip-summary {
+  display: flex;
+}
+
+.trip {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 128px;
+}
+
+.trip-summary {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 90px 0 162px;
+}
+
+.trip-description h3 {
+  font-size: var(--font-size-h3);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--dark-blue-color);
+}
+
+.trip-description p {
+  font-size: var(--font-size-l);
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-blue-color);
+  font-weight: 400;
+}
+
+.trip-highlights {
+  padding-top: 120px;
+}
+
+.trip-highlights h3 {
+  font-size: var(--font-size-h3);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--dark-blue-color);
+}
+
+.trip-highlights ul {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+
+.trip-highlights ul li {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-m);
+}
+
+.trip-highlights ul li div {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #85bac8;
+  margin-right: 16px;
+  font-size: var(--font-size-s);
+  min-height: 32px;
+  min-width: 32px;
+}
+
+/*trip itinerary*/
+.trip-itinerary {
+  padding-top: 120px;
+}
+
+.trip-itinerary h3 {
+  font-size: var(--font-size-h3);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--dark-blue-color);
+}
+
+.trip-itinerary ul {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+
+.trip-itinerary ul li {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-m);
+}
+
+.trip-itinerary ul li span {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--dark-blue-color);
+  margin-right: 16px;
+  font-size: var(--font-size-s);
+  min-height: 18px;
+  min-width: 18px;
+}
+
+.trip .price {
+  box-sizing: border-box;
+  width: 33.3%;
+  padding: 80px 162px 0 16px;
+}
+
+
+
+
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.price .summary {
+  box-sizing: border-box;
+  height: 332px;
+  width: 318px;
+  padding: 24px 16px 40px 16px;
+  background-color: var(--light-grey-color);
+  border-radius: 20px;
+}
+
+.price .summary h4:first-of-type {
+  font-size: var(--font-size-h4);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.price .summary p {
+  font-size: var(--font-size-m);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 16px;
+}
+
+.price .summary h4:nth-of-type(2) {
+  font-size: var(--font-size-h4);
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.price .summary button {
+  box-sizing: border-box;
+  width: 286px;
+  height: 48px;
+  padding: 8px 10px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--yellow-color);
+  font-size: var(--font-size-l);
+  color: var(--background-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.price .summary button:hover {
+  opacity: 0.8;
+}
+
+.price .summary button a {
+  text-decoration: none;
+}
+
+.price .summary button a:visited {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.price .summary button a:active {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.travel-details1250 {
+  display: none;
+}
+
+.travel-details768 {
+  display: none;
+}
+
+.price1150 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  padding: 16px 24px;
+  background-color: var(--light-grey-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.price1150 div {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+  align-items: center;
+}
+
+.price1150 h4 {
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  color: var(--dark-blue-color);
+}
+
+.price1150 h4:nth-of-type(2) {
+  color: var(--light-blue-color);
+}
+
+.price1150 h4 span {
+  font-size: var(--font-size-s);
+}
+
+.price1150 button {
+  box-sizing: border-box;
+  width: 286px;
+  height: 48px;
+  padding: 8px 10px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--yellow-color);
+  font-size: var(--font-size-l);
+  color: var(--background-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.price1150 button:hover {
+  opacity: 0.8;
+}
+
+#button1150{
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+#button1150:visited{
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+#button1150:active{
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+
+.price1150 {
+  display: none;
+}
+
+.price1150 .button640 {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .pp-text {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .pp-text h4 {
+    font-size: var(--font-size-l);
+  }
+  .travel-details {
+    display: none;
+  }
+
+  .travel-details1250 {
+    display: flex;
+  }
+
+  .trip-summary {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .trip-summary p {
+    font-size: var(--font-size-m);
+  }
+}
+
+@media (max-width: 1150px) {
+  .trip .price {
+    display: none;
+  }
+
+  .price1150 {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel-details1250 {
+    display: none;
+  }
+
+  .travel-details768 {
+    display: flex;
+  }
+
+  .pp-text {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .pp-text h2 {
+    font-size: var(--font-size-h3);
+    margin-bottom: 16px;
+  }
+
+  .pp-text h4 {
+    font-size: var(--font-size-m);
+  }
+
+  .trip-summary {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .trip-summary h3 {
+    font-size: 36px;
+  }
+
+  .price1150 h4 {
+    font-size: var(--font-size-m);
+  }
+
+  .price1150 button {
+    font-size: var(--font-size-m);
+    width: 25%;
+  }
+}
+
+@media (max-width: 640px) {
+  .price1150 button {
+    display: none;
+  }
+
+  .price1150 .button640 {
+    display: flex;
+    width: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .price1150 {
+    align-items: center;
+  }
+
+  .price1150 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .price1150 div h4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 572px) {
+  .pp-text {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .trip-summary {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .trip-description p {
+    font-size: var(--font-size-s);
+  }
+
+  .trip-highlights ul li {
+    font-size: var(--font-size-s);
+  }
+
+  .trip-itinerary ul li {
+    font-size: var(--font-size-s);
+  }
+}
+
+@media (max-width: 420px) {
+  .pp-text {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .pp-text h2 {
+    font-size: 28px;
+  }
+
+  .pp-text h4 {
+    font-size: 16px;
+  }
+
+  .travel-details-container768 {
+    width: 360px;
+  }
+
+  .trip-summary {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .price1150 h4 {
+    font-size: var(--font-size-s);
+  }
+}
+
+/* TRAVEL STORIES PAGE - TRAVEL STORIES PAGE - TRAVEL STORIES PAGE */
+
+.travel_stories {
+  margin-bottom: 120px;
+}
+
+.travel_stories .description p {
+  margin-bottom: 8px;
+}
+
+.travel_stories .travel-story-country {
+  font-size: var(--font-size-s);
+  color: var(--light-blue-color);
+}
+
+.travel_stories .travel-story-packName {
+  font-size: 32px;
+  font-weight: 600;
+  height: 96px;
+}
+
+/* CHECKOUT FORM  PAGE - CHECKOUT FORM  PAGE - CHECKOUT FORM  PAGE */
+
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-m) var(--padding-l) var(--padding-l) var(--padding-l);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  height: 138px;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-container-right img {
+  height: 60px;
+  width: 165px;
+  padding: 8px 8px 8px 113px;
+}
+
+.checkoutMain {
+  padding-bottom: 200px;
+}
+
+#entire-checkout-page {
+  color: var(--dark-blue-color);
+}
+
+#entire-checkout-page h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 500;
+  font-style: normal;
+}
+
+#summary-pic {
+  border-radius: 20px;
+}
+
+.icon-size {
+  font-size: 1.2em;
+}
+
+#checkoutform-aside-summary-box {
+  background-color: var(--light-grey-color);
+  border-radius: 20px;
+  padding: var(--padding-m);
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+#checkoutform-aside-summary-box h4,
+#entire-checkout-page .col-lg-8 h4 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#checkoutform-aside-summary-box h4 {
+  margin-bottom: var(--padding-s);
+}
+
+#checkoutform-aside-summary-box ul {
+  margin-bottom: var(--padding-s);
+}
+
+#checkoutform-aside-summary-box h5.mb-3 {
+  font-size: 28px;
+  color: var(--light-blue-color);
+}
+
+#applyButton{
+  color: var(--dark-blue-color);
+  transition: all 0.2s ease;
+}
+
+#bookButton {
+  background-color: var(--yellow-color);
+  border: none;
+  color: var(--background-color);
+  transition: all 0.2s ease;
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}
+
+#applyButton:hover{
+background-color: var(--lighter-blue-color);
+border: 1px solid var(--lighter-blue-color)
+}
+
+
+#bookButton:hover {
+  opacity: 0.8;
+}
+
+.going-header {
+  color: var(--light-blue-color);
+  font-style: oblique;
+  padding-left: 16px;
+}
+
+.footer-container-left .img-fluid {
+  width: 200px;
+  height: 124px;
+  padding-top: 64px;
+}
+
+@media (max-width: 1024px) {
+  .nav-container-right img {
+    display: none;
+  }
+}
+
+/* CHECKOUT FORM BUTTONS */
+.btn-outline-primary {
+  font-weight: 600;
+  background-color: var(--yellow-color);
+  color: var(--dark-blue-color);
+  border: 1px solid var(--yellow-color);
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.btn-outline-dark {
+  font-weight: 600;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+}
+
+/*destinations map*/
+
+.map-container {
+  width: calc(100% - 96px);
+  margin: 0 auto;
+  padding: 0 48px;
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    width: calc(100% - 48px);
+    padding: 0 24px;
+  }
+}
+
+#oceania:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#south-asia:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#south-asia > * {
+  fill: #85bac8 !important;
+  cursor: pointer;
+}
+
+#north-asia:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#africa:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#europe:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#middle-east:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#south-america:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#north-america:hover > * {
+  fill: #85bac8 !important;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+/*button show more*/
+.show-more {
+  font-family: "poppins", sans-serif;
+  font: weight 100;
+  font-size: 20px;
+  color: var(--dark-blue-color);
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.show-more:hover {
+  color: #18839f;
+}
